@@ -13,13 +13,15 @@
   }
   &__description {
     font-family: v.$tipografia_secondary;
-    text-align: center;
+    text-align: left;
     font-size: 1.0625rem;
     z-index: 16;
-    max-width: 60%;
+    
 
     @include m.media {
       font-size: 1.5625rem;
+      text-align: center;
+      max-width: 60%;
     }
   }
 
