@@ -1,0 +1,28 @@
+@use "../../scss/base/mixin" as m;
+
+.about {
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 4rem;
+    font-weight: 700;
+    font-size: 3.5rem;
+
+    @include m.media{ 
+      font-size: 5rem;
+     }
+  }
+
+  &__description {
+
+    max-width: 40rem;
+    text-align: left;
+    margin-bottom: 1em;
+    font-size: 1.0625rem;
+
+    @include m.media {
+      font-size: 1.5625rem;
+    }
+  }
+}
+

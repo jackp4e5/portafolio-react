@@ -1,0 +1,41 @@
+@use "../../scss/base/mixin" as m;
+@use "../../scss/base/variables" as v;
+.name {
+  font-weight: 700;
+  font-size: 5rem;
+
+  @include m.media {
+    font-size: 8em;
+  }
+}
+
+.typewriter {
+  text-align: center;
+  color: white;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
+  margin: 0 auto;
+  font-family: v.$tipografia_primary;
+  border-right: 0.15em solid #18bdec;
+  animation: typing 3s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+  
+  @include m.media {
+    font-size: 4.2rem;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+

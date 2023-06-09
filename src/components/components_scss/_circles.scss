@@ -1,0 +1,76 @@
+@use '../../scss/base/variables' as v;
+.circles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: v.$light_blue;
+  z-index: 0;
+}
+.circle {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  filter: blur(2.2rem);
+}
+.circle1 {
+  color: v.$color_primary;
+  top: 0;
+  left: 0;
+  animation: circle1 20s ease infinite;
+}
+
+@keyframes circle1 {
+  from {
+    transform: rotate(0deg) scale(2);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+.circle2 {
+  color: v.$dark_purple;
+  top: 0;
+  right: 0;
+  animation: circle2 10s ease infinite;
+}
+
+@keyframes circle2 {
+  from {
+    transform: rotate(0deg) scale(2);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+.circle3 {
+  color: v.$green;
+  bottom: 50px;
+  left: 10px;
+  animation: circle3 20s ease infinite;
+}
+
+@keyframes circle3 {
+  from {
+    transform: rotate(0deg) scale(2);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
+.circle4 {
+  color: v.$yellow;
+  bottom: 0;
+  right: 0;
+  animation: circle4 20s ease infinite;
+}
+
+@keyframes circle4 {
+  from {
+    transform: rotate(0deg) scale(2);
+  }
+  to {
+    transform: rotate(360deg) scale(2);
+  }
+}
