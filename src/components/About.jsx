@@ -11,10 +11,14 @@ export const About = () => {
           área del desarrollo web.
         </p>
         <p className="about__description">
-          En mis tiempos libres, me gusta enfocarme en el aprendizaje,
-          entretenerme con videojuegos y ver series de anime estoy atento a
-          oportunidades de trabajo donde pueda contribuir, crecer y seguir
-          aprendiendo
+          En mis tiempos libres, me gusta enfocarme en el aprendizaje y en
+          desarrollar proyectos para afianzar temas vistos en cursos que he
+          tomado. Tomando en cuenta las herramientas a utilizar y consejos que
+          me ayudan a ir mejorando.
+        </p>
+        <p className="about__description">
+          Estoy atento a oportunidades de trabajo donde pueda contribuir, crecer
+          y seguir aprendiendo
         </p>
       </div>
 

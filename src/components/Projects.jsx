@@ -37,10 +37,13 @@ export const Projects = () => {
           target="_blank"
           className="ref"
         >
-          Frontend-Mentor, 
-        </a>
-        {' '} dicha página provee diversos retos que me ayudaron a poner en practica
-        mis conocimientos y aumentar un poco más mi destreza para desarrollarlos
+          Frontend-Mentor,
+        </a>{" "}
+        dicha página provee diversos retos que me ayudaron a poner en practica
+        mis conocimientos y aumentar un poco más mi destreza para
+        desarrollarlos, cada uno de ellos tiene su nivel de dificultad, como
+        manejo de etiquetas HTML, manejo de css y validación de formularios con
+        JavaScript
       </p>
       <div className="projects__flex">
         {CARD.map((item, i) => (
