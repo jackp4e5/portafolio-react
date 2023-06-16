@@ -18,7 +18,7 @@ export const About = () => {
         </p>
         <p className="about__description">
           Estoy atento a oportunidades de trabajo donde pueda contribuir, crecer
-          y seguir aprendiendo
+          y seguir aprendiendo sobre estas tecnologías que ayudan a mi crecimiento como desarrollador front-end 
         </p>
       </div>
 
