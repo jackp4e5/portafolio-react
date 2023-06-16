@@ -6,15 +6,15 @@ export const About = () => {
       <div className="about__wraper">
         <p className="about__description">
           soy un aprendiz autónomo de front-end, me encanta aprender y poner en
-          practica mis conocimientos en proyectos que tomo de ejemplo, para
-          seguir puliendo mis habilidades y expandiendo mi conocimiento en esta
-          área del desarrollo web.
+          practica mis conocimientos en HTML, CSS y JAVASCRIPT con proyectos que
+          tomo de ejemplo, para seguir puliendo mis habilidades y expandiendo mi
+          conocimiento en esta área del desarrollo web.
         </p>
         <p className="about__description">
           En mis tiempos libres, me gusta enfocarme en el aprendizaje y en
           desarrollar proyectos para afianzar temas vistos en cursos que he
-          tomado. Tomando en cuenta las herramientas a utilizar y consejos que
-          me ayudan a ir mejorando.
+          tomado. Teniendo en cuenta las herramientas a utilizar y consejos que
+          me ayudan a ir mejorando. 
         </p>
         <p className="about__description">
           Estoy atento a oportunidades de trabajo donde pueda contribuir, crecer
