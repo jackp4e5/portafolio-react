@@ -1,6 +1,6 @@
 import { useRef } from "react";
-
-const NAV = ["Inicio", "Proyectos", "Habilidades", "About"];
+import img from "../img/logo7.png";
+const NAV_LINKS = ["About", "Habilidades", "Proyectos"];
 
 export const Header = () => {
   const header = useRef(null);
@@ -8,10 +8,10 @@ export const Header = () => {
   const nav = useRef(null);
   const close = useRef(null);
 
-  let main_location = window.pageYOffset;
+  let main_location = window.scrollY;
 
   window.onscroll = () => {
-    const displacement = window.pageYOffset;
+    const displacement = window.scrollY;
     main_location >= displacement
       ? (header.current.style.top = "0")
       : (header.current.style.top = "-100px");
@@ -31,7 +31,7 @@ export const Header = () => {
       <header ref={header} className="header">
         <h1 className="header__logo">
           <a href="#" className="a">
-            Jack Pachon
+            <img className="logo" src={img} alt="logo" />
           </a>
         </h1>
         <a href="#" className="header__button" onClick={toggleFn}>
@@ -63,9 +63,13 @@ export const Header = () => {
         </a>
         <nav ref={nav} className="nav active">
           <ul className="nav__list">
-            {NAV.map((item) => (
+            {NAV_LINKS.map((item) => (
               <li className="nav__list-item" key={item}>
-                <a href={`#${item}`} title={`${item}`} className="underScore">
+                <a
+                  href={`#${item}` || "#hola"}
+                  title={`${item}`}
+                  className="underScore"
+                >
                   {item}
                 </a>
               </li>

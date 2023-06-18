@@ -6,7 +6,6 @@ import popup from "../img/article-preview.jpg";
 import card from "../img/qr-code.jpg";
 import social from "../img/social-proof.jpg";
 import product from "../img/pruduc-preview-card.jpg";
-
 const CARD = [
   {
     title: "Formulario",
@@ -57,19 +56,6 @@ export const MoreProyects = () => {
     <>
       <section className="projects main__section " id="projects">
         <h2 className=" projects__title ">Proyectos</h2>
-
-        <p className="projects__description">
-          proyectos creados, como practica de mis habilidades, estos proyectos
-          fueron tomados de{" "}
-          <a
-            href="https://www.frontendmentor.io/profile/jackp4e5"
-            target="_blank"
-            className="ref"
-          >
-            Frontend-Mentor
-          </a>
-        </p>
-
         <div className="projects__grid">
           {CARD.map((item, i) => (
             <article className="projects__article" key={i}>

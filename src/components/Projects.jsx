@@ -30,8 +30,7 @@ export const Projects = () => {
       <h2 className=" projects__title animation">Proyectos</h2>
 
       <p className="projects__description">
-        proyectos creados, como practica de mis habilidades, estos proyectos
-        fueron tomados como ejemplo de{" "}
+        Para practicar mis habilidades he tomado lo diseños publicados en{" "}
         <a
           href="https://www.frontendmentor.io/profile/jackp4e5"
           target="_blank"
@@ -39,11 +38,15 @@ export const Projects = () => {
         >
           Frontend-Mentor,
         </a>{" "}
-        dicha página provee diversos retos que me ayudaron a poner en practica
-        mis conocimientos y aumentar un poco más mi destreza para
-        desarrollarlos, cada uno de ellos tiene su nivel de dificultad, como
-        manejo de etiquetas HTML, manejo de css y validación de formularios con
-        JavaScript
+        Esta página provee diversos retos que me ayudan a poner en práctica mis
+        conocimientos y aumentar mi destreza para solucionarlos.{" "}
+      </p>
+
+      <p className="projects__description">
+        A continuación, encontraras las soluciones destacadas en las que he
+        enfocado mi atención en el correcto uso de las etiquetas HTML,
+        aplicación de estilos con CSS, y validación de formularios con
+        JAVASCRIPT.
       </p>
       <div className="projects__flex">
         {CARD.map((item, i) => (
@@ -111,7 +114,7 @@ export const Projects = () => {
         ))}
       </div>
 
-      <Link to="/works" title="more works" className="projects__button">
+      <Link to="/projects" title="more works" className="projects__button">
         Ver más
       </Link>
     </section>

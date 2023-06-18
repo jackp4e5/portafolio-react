@@ -11,14 +11,10 @@ export const Principal = () => {
     <>
       <div className="body__wraper">
         <Header />
-
         <Inicio />
-
-        <Projects />
-
-        <Skills />
-
         <About />
+        <Skills />
+        <Projects />
       </div>
       <Lateral />
     </>

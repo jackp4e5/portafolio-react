@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import css from "../../public/css.png";
 import git from "../../public/git.png";
 import html from "../../public/html.png";
@@ -46,23 +46,23 @@ const IMG = [
 ];
 
 export const Skills = () => {
-  const TOOL = useRef(null);
+  const [name, setName] = useState("HTML");
+  const toolRef = useRef(null);
 
-  function rotateCube(side, name) {
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      toolRef.current.classList.add("typewriter_skills");
+    }, 0);
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [name]);
+
+  function rotateCube(side, newName) {
     const cube = document.querySelector(".cube");
     cube.setAttribute("class", `cube show-${side}`);
-    TOOL.current.textContent = name;
-    TOOL.current.classList.add('typewriter_skills');
-
-    if (name === 'JAVASCRIPT') {
-      setTimeout(() => {
-        TOOL.current.classList.remove('typewriter_skills');
-      }, 4000);
-    }else{
-      setTimeout(() => {
-        TOOL.current.classList.remove('typewriter_skills');
-      }, 1600);
-    }
+    toolRef.current.classList.remove("typewriter_skills");
+    setName(newName);
   }
 
   return (
@@ -80,7 +80,9 @@ export const Skills = () => {
           ))}
         </div>
 
-        <span className="skills__name-tool" ref={TOOL}>HTML</span>
+        <span className="skills__name-tool" ref={toolRef}>
+          {name}
+        </span>
 
         <div className="actions">
           {IMG.map((item, i) => (
