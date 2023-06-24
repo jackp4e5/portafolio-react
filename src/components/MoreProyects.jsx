@@ -58,7 +58,7 @@ export const MoreProyects = () => {
         <h2 className=" projects__title ">Proyectos</h2>
         <div className="projects__grid">
           {CARD.map((item, i) => (
-            <article className="projects__article" key={i}>
+            <article className="projects__art" key={i}>
               <figure className="projects__figure">
                 <img
                   className="img"
@@ -82,7 +82,7 @@ export const MoreProyects = () => {
                     href={`${item.hrefWeb}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex__web--button"
+                    className="flex__web-button"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ export const MoreProyects = () => {
                     href={`${item.hrefGithub}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex__web--button"
+                    className="flex__github-button"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

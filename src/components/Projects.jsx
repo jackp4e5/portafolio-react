@@ -7,8 +7,8 @@ const CARD = [
   {
     title: "Formulario",
     image: form,
-    hrefWeb: "https://resplendent-licorice-0eae88.netlify.app/",
-    hrefGithub: "https://github.com/jackp4e5/-sign-up-form",
+    hrefWeb: "https://sing-up-form-jack.netlify.app/",
+    hrefGithub: "https://github.com/jackp4e5/fem-faq-accordion",
   },
   {
     title: "Popup",
@@ -74,7 +74,7 @@ export const Projects = () => {
                   href={`${item.hrefWeb}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex__web--button"
+                  className="flex__web-button"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ export const Projects = () => {
                   href={`${item.hrefGithub}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex__web--button"
+                  className="flex__github-button"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

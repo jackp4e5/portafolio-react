@@ -16,8 +16,7 @@
     text-align: left;
     font-size: 1.0625rem;
     z-index: 16;
-    margin-top: 5PX;
-    
+    margin-top: 5px;
 
     @include m.media {
       font-size: 1.5625rem;
@@ -41,22 +40,24 @@
     width: 94%;
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
-    @include m.media{
-      grid-template-columns: repeat(3,1fr); 
+    grid-template-columns: repeat(1, 1fr);
+    @include m.media {
+      grid-template-columns: repeat(3, 1fr);
     }
     align-items: center;
     gap: 1rem;
   }
-  &__art{
+  &__art {
     position: relative;
     flex-basis: 18.75rem;
     flex-grow: 1;
+    overflow: hidden;
   }
   &__article {
     position: relative;
     flex-basis: 18.75rem;
     flex-grow: 1;
+    
 
     @include m.query(912px) {
       &:last-child {
@@ -64,8 +65,6 @@
       }
     }
   }
-
-  
 
   &__figure {
     width: 100%;
@@ -102,19 +101,14 @@
     backdrop-filter: blur(2px);
     position: absolute;
     bottom: 0;
-    left: 0;
-    display: none;
+    left: 100%;
+    display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
     gap: 0.7rem;
-    opacity: 0;
-    transition: opacity 1s ease, transform 1s;
-
-    &:hover {
-      opacity: 1;
-      
-    }
+    opacity: 1;
+    transition: left .5s    ease, transform 1s;
 
     &--title {
       color: v.$color_light;
@@ -122,9 +116,10 @@
   }
 }
 
-.projects__art > .projects__card {
-  display: flex;
+.projects__art:hover > .projects__card {
+  left: 0;
 }
+
 
 .flex {
   width: 90%;
@@ -132,17 +127,13 @@
   justify-content: space-evenly;
   font-size: 1.125rem;
   letter-spacing: 0.1875rem;
-
-  &__web--button {
-    padding: 0.6rem;
-    border-radius: 0.5rem;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      padding: 5px;
-    }
-  }
+&__web-button{
+  color: white;
+}
+&__github-button{
+  color: white;
+}
+  
 
   &__socials {
     clip: rect(0, 0, 0, 0);

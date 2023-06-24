@@ -11,15 +11,12 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   gap: 1em;
   top: 0;
   box-shadow: 0px -4px 9px v.$color_light;
   transition: top 0.5s;
   z-index: 20;
-
-  @include m.media {
-    position: fixed;
-  }
 
   &__logo {
     font-size: 2rem;

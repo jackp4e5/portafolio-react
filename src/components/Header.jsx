@@ -7,6 +7,7 @@ export const Header = () => {
   const hamburgerSvg = useRef(null);
   const nav = useRef(null);
   const close = useRef(null);
+  const button = useRef(null);
 
   let main_location = window.scrollY;
 
@@ -15,8 +16,7 @@ export const Header = () => {
     main_location >= displacement
       ? (header.current.style.top = "0")
       : (header.current.style.top = "-100px");
-
-    main_location = displacement;
+      main_location = displacement
   };
 
   const toggleFn = () => {
@@ -25,16 +25,21 @@ export const Header = () => {
     hamburgerSvg.current.classList.toggle("inactive");
   };
 
+  const href = (item) => {
+    console.log(item);
+    button.current.href = `#${item}`
+    toggleFn()
+  };
   return (
     <>
-      {}
+    
       <header ref={header} className="header">
         <h1 className="header__logo">
-          <a href="#" className="a">
+          <a href="#" onClick={()=> href('Inicio') } className="a">
             <img className="logo" src={img} alt="logo" />
           </a>
         </h1>
-        <a href="#" className="header__button" onClick={toggleFn}>
+        <a ref={button} href="#" className="header__button" onClick={toggleFn}>
           <svg
             ref={hamburgerSvg}
             className="svg__hamburger"
@@ -66,9 +71,10 @@ export const Header = () => {
             {NAV_LINKS.map((item) => (
               <li className="nav__list-item" key={item}>
                 <a
-                  href={`#${item}` || "#hola"}
+                  href={`#${item}`}
                   title={`${item}`}
                   className="underScore"
+                  onClick={()=> href(item)}
                 >
                   {item}
                 </a>
