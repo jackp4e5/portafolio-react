@@ -20,7 +20,7 @@ export const Lateral = () => {
             </a>
           </li>
           <li className="left__link">
-            <a href="https://www.linkedin.com/in/jack-pachon/" title="linkedin">
+            <a href="https://www.linkedin.com/in/jack-pachon/" target="_blank" title="linkedin">
               <span className="flex__socials">linkedin</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"

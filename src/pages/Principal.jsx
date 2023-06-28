@@ -5,6 +5,7 @@ import {
   Projects,
   About,
   Skills,
+  Footer
 } from "../components";
 export const Principal = () => {
   return (
@@ -15,6 +16,7 @@ export const Principal = () => {
         <About />
         <Skills />
         <Projects />
+        <Footer/>
       </div>
       <Lateral />
     </>
