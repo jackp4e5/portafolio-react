@@ -1,6 +1,3 @@
-import linkedin from "../img/linkedin.svg";
-import git from "../img/git.svg";
-
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (

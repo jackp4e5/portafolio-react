@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import css from "../../public/css.png";
-import git from "../../public/git.png";
-import html from "../../public/html.png";
-import javaScript from "../../public/javaScript.png";
-import react from "../../public/react.png";
-import sass from "../../public/sass.png";
+import css from "../img/css.png";
+import git from "../img/git.png";
+import html from "../img/html.png";
+import javaScript from "../img/javaScript.png";
+import react from "../img/react.png";
+import sass from "../img/sass.png";
 
-const IMG = [
+const img = [
   {
     alt: "HTML",
     img: html,
@@ -70,7 +70,7 @@ export const Skills = () => {
       <h2 className="skills__title"> Habilidades</h2>
       <div className="skills__container">
         <div className="cube show-front">
-          {IMG.map((item, i) => (
+          {img.map((item, i) => (
             <img
               key={`pw${i}`}
               className={`skills__img ${item.className}`}
@@ -85,7 +85,7 @@ export const Skills = () => {
         </span>
 
         <div className="actions">
-          {IMG.map((item, i) => (
+          {img.map((item, i) => (
             <button
               key={i + 2}
               className="skills__button"
