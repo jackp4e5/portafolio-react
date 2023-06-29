@@ -60,8 +60,8 @@ h2 {
     align-items: center;
     overflow: hidden;
 
-    @include m.query(768px){
-      min-height: 100vh ;
+    @include m.query(768px) {
+      min-height: 100vh;
     }
   }
 }
@@ -69,7 +69,6 @@ h2 {
 .body__wraper {
   text-align: center;
   position: relative;
-  z-index: 1;
 }
 
 .svg {
@@ -116,21 +115,24 @@ h2 {
   display: none;
   left: 0;
 }
-.side__right {
+.side-right {
   display: none;
   right: 0;
   font-size: 1.2rem;
+  &__icons{
+    position: relative;
+  }
 }
 
 @media (min-width: 768px) {
   .side__left {
     display: block;
   }
-  .side__right {
+  .side-right {
     display: block;
   }
 }
-.side__right a {
+.side-right a {
   margin-bottom: 0.625rem;
   writing-mode: vertical-lr;
 }

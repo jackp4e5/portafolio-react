@@ -2,7 +2,7 @@ export const Lateral = () => {
   return (
     <>
       <div className="container__lateral side__left">
-        <ul className="left__list">
+        <ul className="left__list ">
           <li className="left__link">
             <a href="https://github.com/jackp4e5" target="_blank" title="gitub">
               <span className="flex__socials">github</span>
@@ -37,8 +37,8 @@ export const Lateral = () => {
         </ul>
       </div>
 
-      <div className="container__lateral side__right">
-        <a href="">jack.kilian3592@gmail.com</a>
+      <div className="container__lateral side-right">
+        <a className="side-right__icons" href="mailto:jack.kilian3592@gmail.com">jack.kilian3592@gmail.com</a>
       </div>
     </>
   );
