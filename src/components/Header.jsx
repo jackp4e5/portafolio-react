@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import img from "../img/logo7.png";
-const NAV_LINKS = ["About", "Habilidades", "Proyectos"];
+const NAV_LINKS = ["Sobre mi", "Habilidades", "Proyectos"];
 
 export const Header = () => {
   const header = useRef(null);
@@ -35,7 +35,7 @@ export const Header = () => {
     
       <header ref={header} className="header">
         <h1 className="header__logo">
-          <a href="#" onClick={()=> href('Inicio') } className="a">
+          <a href="#Inicio" onClick={()=> href('Inicio') } className="a">
             <img className="logo" src={img} alt="logo" />
           </a>
         </h1>

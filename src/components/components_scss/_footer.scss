@@ -1,9 +1,10 @@
 @use "../../scss/base/mixin" as m;
 .footer {
-  background-color: rgba(21, 29, 51, 0.9);
-  backdrop-filter: blur(5px);
-  padding-block: 50px 8px;
-  position: inherit;
+  // margin-top: 8.125rem;
+  // background-color: rgba(21, 29, 51, 0.9);
+  // backdrop-filter: blur(5px);
+  padding-block: 50px 0;
+  position: relative;
   z-index: 11;
 
   &__div {
@@ -13,12 +14,11 @@
     gap: 20px;
     justify-content: space-around;
     align-items: center;
-    @include m.query(912px) {
-      flex-flow: row;
-    }
+    padding-bottom: 3rem;
+
   }
   &__h3 {
-    font-size: 1.5625rem;
+    font-size: 3rem;
   }
 
   &__container-socials {
@@ -46,4 +46,17 @@
   padding-block: 20px;
   margin-top: -3px;
   width: 100%;
+}
+
+.video{
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  display: none;
+  @include m.query(912px) {
+   display: block;
+  }
 }

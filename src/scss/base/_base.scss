@@ -119,7 +119,7 @@ h2 {
   display: none;
   right: 0;
   font-size: 1.2rem;
-  &__icons{
+  &__icons {
     position: relative;
   }
 }
@@ -154,6 +154,7 @@ h2 {
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
+  color: red;
 
   &__li {
     margin: 0 1em;

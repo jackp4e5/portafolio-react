@@ -1,11 +1,11 @@
-import gmail from "../img/gmail.png"
+import gmail from "../img/gmail.png";
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
       <footer className="footer">
         <section className="footer__div">
-          <h3 className="footer__h3">Contactame!</h3>
+          <h3 className="footer__h3">Contáctame</h3>
           <div className="footer__container-socials">
             <a href="https://github.com/jackp4e5" target="_blank">
               <svg
@@ -47,9 +47,8 @@ export const Footer = () => {
               <img width={40} height={40} src={gmail} alt="" />
             </a>
           </div>
-
         </section>
-          <p className="copyright">copyright &copy; Jack {year}</p>
+        <p className="copyright">copyright &copy; Jack {year}</p>
       </footer>
     </>
   );
