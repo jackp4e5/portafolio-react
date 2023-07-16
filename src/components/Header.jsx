@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import img from "../img/logo7.png";
+import { NavHashLink } from "react-router-hash-link";
 const NAV_LINKS = ["Sobre mi", "Habilidades", "Proyectos"];
 
 export const Header = () => {
@@ -16,7 +17,7 @@ export const Header = () => {
     main_location >= displacement
       ? (header.current.style.top = "0")
       : (header.current.style.top = "-100px");
-      main_location = displacement
+    main_location = displacement;
   };
 
   const toggleFn = () => {
@@ -26,20 +27,23 @@ export const Header = () => {
   };
 
   const href = (item) => {
-    console.log(item);
-    button.current.href = `#${item}`
-    toggleFn()
+    button.current.href = `#${item}`;
+    toggleFn();
   };
   return (
     <>
-    
       <header ref={header} className="header">
         <h1 className="header__logo">
-          <a href="#Inicio" onClick={()=> href('Inicio') } className="a">
+          <a href="#Inicio" onClick={() => href("Inicio")} className="a">
             <img className="logo" src={img} alt="logo" />
           </a>
         </h1>
-        <div ref={button} href="#" className="header__button" onClick={toggleFn}>
+        <div
+          ref={button}
+          href="#"
+          className="header__button"
+          onClick={toggleFn}
+        >
           <svg
             ref={hamburgerSvg}
             className="svg__hamburger"
@@ -70,14 +74,14 @@ export const Header = () => {
           <ul className="nav__list">
             {NAV_LINKS.map((item) => (
               <li className="nav__list-item" key={item}>
-                <a
-                  href={`#${item}`}
+                <NavHashLink
+                  to={`#${item}`}
                   title={`${item}`}
                   className="underScore"
-                  onClick={()=> href(item)}
+                  onClick={() => href(item)}
                 >
                   {item}
-                </a>
+                </NavHashLink>
               </li>
             ))}
           </ul>

@@ -38,10 +38,10 @@ export const Projects = () => {
           target="_blank"
           className="ref"
         >
-          Frontend-Mentor,
-        </a>{" "}
-        Esta página provee retos en diversos niveles de dificultad que asemejan
-        esenarios de la vida real. Resolverlos me ayuda a ampliar mis
+          Frontend-Mentor
+        </a>
+        . Esta página provee retos en diversos niveles de dificultad que asemejan
+        escenarios de la vida real. Resolverlos me ayuda a ampliar mis
         conocimientos y mejorar mi destreza para solucionarlos.{" "}
       </p>
 

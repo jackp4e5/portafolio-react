@@ -7,7 +7,7 @@ export const About = () => {
         <p className="about__description">
           Soy un desarrollador front-end autónomo, me encanta aprender y poner
           en práctica mis conocimientos en cada proyecto que realizo. Busco
-          seguir puliendo mis habilidades y expandiendo mis conocimiento en esta
+          seguir puliendo mis habilidades y expandiendo mis conocimientos en esta
           área del desarrollo web.
         </p>
         <p className="about__description">

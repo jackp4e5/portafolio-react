@@ -1,23 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { Layout } from "./components/Layout.jsx";
 import { Principal } from "./pages/Principal";
 import { WorksPage } from "./pages/workspage.jsx";
 
 import "./index.scss";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
     children: [
       {
-        index:true,
+        index: true,
         element: <Principal />,
       },
       {
-        path: "/projects",
+        path: "projects",
         element: <WorksPage />,
       },
     ],
