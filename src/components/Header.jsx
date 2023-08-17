@@ -34,9 +34,9 @@ export const Header = () => {
     <>
       <header ref={header} className="header">
         <h1 className="header__logo">
-          <a href="#Inicio" onClick={() => href("Inicio")} className="a">
+          <NavHashLink to="#Inicio" onClick={() => href("Inicio")} className="a">
             <img className="logo" src={img} alt="logo" />
-          </a>
+          </NavHashLink>
         </h1>
         <div
           ref={button}
